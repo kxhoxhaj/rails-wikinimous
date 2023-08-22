@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm-8 col-sm-offset-2">
+      <ul class="list-group">
+        <% @articles.each do |article|%>
+          <h2><li class="list-group-item"><%= article.title %> </li></h2>
+          <p><li class="list-group-item"><%= article.content %> </li></p>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
